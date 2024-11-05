@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Project </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="home" id="home">
+        <nav>
+            
+            <div class="nav-center">
+                <div class="nav-logo">
+                    <img src="coding-high-resolution-logo-transparent.png" alt="logo.png">
+                </div>
+                <div class="links-container">
+                    <ul id="links" class="links nav-links">
+                        <li class="">
+                            <a href="#" class="" onclick="scrollToTop()">Home</a>
+                        </li>
+                        <li class="scroll-links">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="scroll-links">
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="scroll-links">
+                            <a href="#tour">Tours</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="nav-toggle">
+                    <i class="fa-solid fa-bars open toggle-btns" ></i>
+                     
+                </div>
+            </div>
+            <div class="hdn-links-for-small-scrn">
+                <ul class="hdn-links links">
+                    
+                        <li class="" >
+                            <a href="#" onclick="scrollToTop()">Home</a>
+                        </li>
+                    
+                    
+                        <li  class="scroll-links" >
+                            <a  href="#about" >About</a>
+                        </li>
+                    
+                    
+                        <li class="scroll-links" >
+                            <a href="#services" >Services</a>
+                        </li>
+                    
+                    
+                        <li class="scroll-links" >
+                            <a href="#tour" >Tours</a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+            <h1>SCROLL PROJECT</h1>
+            <p>Lorem ipsum dolor si Lo sunt eum accusamus facdolores accusamus, iusto quam, co, perspiciatis?t amet consectetur adipisicing elit. Est cupiditate, minus soluta totam repellat nihil esse similique error. Omnis similique temporibus sit dolore neque doloribus sed quo distinctio iusto in.</p>
+            <a href="#tour" class="scroll-links">Explore Tour</a>
+        </div>
+    </header>
+    <section id="about">
+    <h1> <span>About</span>Us</h1>
+    </section>
+    <section id="services">
+        <h1>Our <span>Services</span></h1>
+    </section>
+    <section id="tour">
+        <h1>Our <span>Tours</span></h1>
+    </section>    
+    <button class="top" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button> 
+    <footer>
+        <p>&copy; <span id="year" style="font-weight: bold;"></span> Tour & Travel Company. All rights reserved. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited.</p>
+
+    </footer>                             
+    <script src="script.js"></script>
+</body>
+</html>
