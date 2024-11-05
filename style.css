@@ -228,7 +228,10 @@ section h1 span{
         width: 100%;
     }
     .banner {
-        margin-top: 16%;
+        margin-top: 20%;
+    }
+    footer{
+        height: fit-content;
     }
     
 }
