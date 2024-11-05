@@ -219,6 +219,17 @@ section h1 span{
     .nav-logo img{
         width: 100px;
     }
+    #about,
+    #services,
+    #tour{
+        font-size: 28px;
+    }
+    .banner p{
+        width: 100%;
+    }
+    .banner {
+        margin-top: 16%;
+    }
     
 }
 .top{
