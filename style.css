@@ -216,6 +216,9 @@ section h1 span{
     .banner p{
         width: 80%;
     }
+    .nav-logo img{
+        width: 200px;
+    }
     
 }
 .top{
