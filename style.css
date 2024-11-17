@@ -28,6 +28,9 @@ header{
     justify-content: flex-start;
     align-items: center;
 }
+.hide-nav{
+    display: none;
+}
 .nav-logo{
     height: fit-content;
     width: fit-content;
@@ -87,9 +90,7 @@ header{
     
 }
 
-.hide-links{
-    display: none;
-}
+
 
 
 .hdn-links li{

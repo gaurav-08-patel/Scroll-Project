@@ -9,6 +9,9 @@ const scrollTop=document.querySelectorAll(".scroll-to-top");
 const banner = document.querySelector(".banner");
 const scrollLinks =document.querySelectorAll(".scroll-links");
 const navHeight=navCenter.getBoundingClientRect().height;
+let floatingNav = document.querySelector(".floating-nav");
+let navContain = document.querySelector(".contains-nav");
+
 
 // const toggleBtns=document.querySelectorAll(".toggle-btns");
 
@@ -25,10 +28,10 @@ scrollLinks.forEach((links)=>{
         e.preventDefault();
         const  id=e.target.getAttribute("href").slice(1);
         const element=document.getElementById(id);
-        let position=element.offsetTop - navHeight;
+        let position=element.offsetTop- navHeight ;
         const condition=navBar.classList.contains("fixed-nav");
         // if(!condition){
-        //     position=position - navHeight;
+            // position=position ;
         // } 
         
         window.scrollTo({
@@ -59,11 +62,17 @@ window.addEventListener("scroll",()=>{
     const scroll = window.pageYOffset;
     
     if(scroll>navHeight){
-        navBar.classList.add("fixed-nav");
-        banner.style.height="100%";
+
+        navContain.classList.add("fixed-nav");
+        // banner.style.height="100%";
+        // floatingNav.innerHTML=navCenter.innerHTML;
+
+
+
     }else{
-        navBar.classList.remove("fixed-nav");
-        banner.style.height="auto";
+        navContain.classList.remove("fixed-nav");
+        // banner.style.height="auto";
+        // floatingNav.innerHTML="";
     }
     if(scroll<navHeight){
         hiddenLinks.style.height="0";
